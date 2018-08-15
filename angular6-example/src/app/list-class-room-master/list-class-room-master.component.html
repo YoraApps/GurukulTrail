@@ -1,3 +1,30 @@
-<p>
-  list-class-room-master works!
-</p>
+<div class="col-md-6">
+  <h2>ClassRoomMaster Details</h2>
+  <button class="btn btn-danger" (click)="addClassRoomMaster()"> Add ClassRoomMaster</button>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Class_Id</th>
+      <th>UniversityId</th>
+      <th>SemesterName</th>
+      <th>Created_On</th>
+      <th>Created_Ip</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let class of classRoomMasters">
+      <td class="hidden">{{class.Class_Id}}</td>
+      <td>{{class.UniversityId}}</td>
+      <td>{{class.SemesterName}}</td>
+      <td>{{class.Created_On}}</td>
+      <td>{{class.Created_Ip}}</td>
+      <td><button class="btn btn-danger" (click)="deleteSemester(class)"> Delete</button>
+        <button class="btn btn-danger" (click)="editSemester(class)" style="margin-left: 20px;"> Edit</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+

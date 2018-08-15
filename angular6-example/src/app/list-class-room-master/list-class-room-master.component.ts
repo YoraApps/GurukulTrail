@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
+import {ClassRoomMasterServiceService} from "../service/class-room-master-service.service";
+import {classRoomMaster} from '../model/classRoomMaster.model';
+
 
 @Component({
   selector: 'app-list-class-room-master',
@@ -7,9 +11,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListClassRoomMasterComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private router:Router,private classRoomMasterServiceService:ClassRoomMasterServiceService) { }
+  classRoomMasters:classRoomMaster[];
   ngOnInit() {
-  }
+    this.classRoomMasterServiceService.getClassMaster()
+    .subscribe(data=>{
+      this.classRoomMasters = data;
+    })
+  };
 
 }

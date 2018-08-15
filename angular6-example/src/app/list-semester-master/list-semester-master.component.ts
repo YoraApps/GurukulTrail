@@ -15,7 +15,6 @@ export class ListSemesterMasterComponent implements OnInit {
  
   semesterMasters: semesterMaster[];
   ngOnInit() {
-    debugger
     this.semesterMasterService.getSemester()
       .subscribe( data => {
         this.semesterMasters = data;
@@ -23,7 +22,6 @@ export class ListSemesterMasterComponent implements OnInit {
   }
 
   deleteSemester(semesterMasters: semesterMaster): void{
-    debugger
     this.semesterMasterService.deleteSemester(semesterMasters.SemesterId)
     .subscribe( data => {
       this.semesterMasters=this.semesterMasters.filter(s=>s !==semesterMasters );

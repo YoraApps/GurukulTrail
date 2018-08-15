@@ -15,6 +15,7 @@ import {SemesterMasterService} from "./service/semester-master.service";
 import { AddSemesterMasterComponent } from './add-semester-master/add-semester-master.component';
 import { EditSemesterMasterComponent } from './edit-semester-master/edit-semester-master.component';
 import { ListSemesterMasterComponent } from './list-semester-master/list-semester-master.component';
+import { ListClassRoomMasterComponent } from './list-class-room-master/list-class-room-master.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ListSemesterMasterComponent } from './list-semester-master/list-semeste
     EditUserComponent,
     AddSemesterMasterComponent,
     EditSemesterMasterComponent,
-    ListSemesterMasterComponent
+    ListSemesterMasterComponent,
+    ListClassRoomMasterComponent
   ],
   imports: [
     BrowserModule,

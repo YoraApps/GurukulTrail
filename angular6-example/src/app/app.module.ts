@@ -16,7 +16,9 @@ import { AddSemesterMasterComponent } from './add-semester-master/add-semester-m
 import { EditSemesterMasterComponent } from './edit-semester-master/edit-semester-master.component';
 import { ListSemesterMasterComponent } from './list-semester-master/list-semester-master.component';
 import { ListClassRoomMasterComponent } from './list-class-room-master/list-class-room-master.component';
-
+import {ClassRoomMasterServiceService} from './service/class-room-master-service.service';
+import { AddClassRoomMasterComponent } from './add-class-room-master/add-class-room-master.component';
+import { EditClassRoomMasterComponent } from './edit-class-room-master/edit-class-room-master.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,9 @@ import { ListClassRoomMasterComponent } from './list-class-room-master/list-clas
     AddSemesterMasterComponent,
     EditSemesterMasterComponent,
     ListSemesterMasterComponent,
-    ListClassRoomMasterComponent
+    ListClassRoomMasterComponent,
+    AddClassRoomMasterComponent,
+    EditClassRoomMasterComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,7 @@ import { ListClassRoomMasterComponent } from './list-class-room-master/list-clas
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [AuthenticationService, UserService, SemesterMasterService],
+  providers: [AuthenticationService, UserService, SemesterMasterService,ClassRoomMasterServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

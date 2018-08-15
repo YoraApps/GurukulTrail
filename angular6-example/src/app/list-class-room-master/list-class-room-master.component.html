@@ -6,7 +6,7 @@
     <tr>
       <th class="hidden">Class_Id</th>
       <th>UniversityId</th>
-      <th>SemesterName</th>
+      <th>Class_Name</th>
       <th>Created_On</th>
       <th>Created_Ip</th>
       <th>Action</th>
@@ -16,11 +16,11 @@
     <tr *ngFor="let class of classRoomMasters">
       <td class="hidden">{{class.Class_Id}}</td>
       <td>{{class.UniversityId}}</td>
-      <td>{{class.SemesterName}}</td>
+      <td>{{class.Class_Name}}</td>
       <td>{{class.Created_On}}</td>
       <td>{{class.Created_Ip}}</td>
-      <td><button class="btn btn-danger" (click)="deleteSemester(class)"> Delete</button>
-        <button class="btn btn-danger" (click)="editSemester(class)" style="margin-left: 20px;"> Edit</button></td>
+      <td><button class="btn btn-danger" (click)="deleteClassMaster(class)"> Delete</button>
+        <button class="btn btn-danger" (click)="editClassMaster(class)" style="margin-left: 20px;"> Edit</button></td>
     </tr>
     </tbody>
   </table>

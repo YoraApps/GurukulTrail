@@ -1,3 +1,25 @@
-<p>
-  edit-semester-master works!
-</p>
+<div class="col-md-6">
+  <h2 class="text-center">Edit semester</h2>
+  <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="SemesterCode">SemesterCode:</label>
+      <input formControlName="SemesterId" type="text" name="SemesterId" id="SemesterId" style="display: none" />
+      <input  formControlName="SemesterCode" placeholder="Semester Code" name="SemesterCode" class="form-control" id="SemesterCode">
+    </div>
+
+    <div class="form-group">
+      <label for="SemesterName">SemesterName:</label>
+      <input formControlName="SemesterName" placeholder="Semester Name" name="SemesterName" class="form-control" id="SemesterName">
+    </div>
+
+    <div class="form-group">
+      <label for="SKS">SKS:</label>
+      <input formControlName="SKS" placeholder="SKS" name="SKS" class="form-control" id="SKS">
+    </div>
+    <button class="btn btn-success">Update</button>
+  </form>
+</div>
+
+
+
+

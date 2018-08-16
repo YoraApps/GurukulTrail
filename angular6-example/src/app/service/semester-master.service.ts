@@ -29,6 +29,7 @@ updateSemester(semester: semesterMaster) {
 }
 
 deleteSemester(id: number) {
+  debugger
   return this.http.delete(this.baseUrl+"/Delete/" + id);
 }
 }

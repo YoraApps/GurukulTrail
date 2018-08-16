@@ -28,7 +28,10 @@ namespace HomeCinema.Services.Repository
 
     public ClassRoomMasterDs getClassRoomMasterById(int? id)
     {
-      return this._db.Query<ClassRoomMasterDs>("Ysp_ClassRoomMasterById", commandType: CommandType.StoredProcedure).SingleOrDefault();
+      DynamicParameters param = new DynamicParameters();
+
+      param.Add("@Id", id);
+      return this._db.Query<ClassRoomMasterDs>("Ysp_ClassRoomMasterById", param,commandType: CommandType.StoredProcedure).SingleOrDefault();
     }
 
     public bool removeClassMaster(int? id)

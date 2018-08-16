@@ -6,6 +6,8 @@ import {EditUserComponent} from "./edit-user/edit-user.component";
 import {ListSemesterMasterComponent } from './list-semester-master/list-semester-master.component';
 import {EditSemesterMasterComponent } from './edit-semester-master/edit-semester-master.component';
 import {AddSemesterMasterComponent} from './add-semester-master/add-semester-master.component';
+import { ListClassRoomMasterComponent } from './list-class-room-master/list-class-room-master.component';
+import { AddClassRoomMasterComponent } from './add-class-room-master/add-class-room-master.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -15,6 +17,8 @@ const routes: Routes = [
   { path: 'list-semesterMaster',component:ListSemesterMasterComponent},
   { path: 'edit-semestermaster',component:EditSemesterMasterComponent},
   { path: 'add-semesterMaster',component:AddSemesterMasterComponent},
+  {path: 'list-classRoomMaster',component:ListClassRoomMasterComponent},
+  {path: 'add-ClassMaster',component:AddClassRoomMasterComponent},
   {path : '', component : LoginComponent}
 ];
 

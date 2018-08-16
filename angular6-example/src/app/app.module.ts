@@ -15,6 +15,10 @@ import { AddSemesterMasterComponent } from './Master-Settings/Semester/add-semes
 import { EditSemesterMasterComponent } from './Master-Settings/Semester/edit-semester-master/edit-semester-master.component';
 import { ListSemesterMasterComponent } from './Master-Settings/Semester/list-semester-master/list-semester-master.component';
 import { ListClassRoomMasterComponent } from './Master-Settings/ClassRoom/list-class-room-master/list-class-room-master.component';
+import { ListGroupMasterComponent } from './list-group-master/list-group-master.component';
+import { AddGroupMasterComponent } from './add-group-master/add-group-master.component';
+import { EditGroupMasterComponent } from './edit-group-master/edit-group-master.component';
+import {GroupMasterService} from "./service/group-master.service";
 import {ClassRoomMasterServiceService} from './service/class-room-master-service.service';
 import { AddClassRoomMasterComponent } from './Master-Settings/ClassRoom/add-class-room-master/add-class-room-master.component';
 import { EditClassRoomMasterComponent } from './Master-Settings/ClassRoom/edit-class-room-master/edit-class-room-master.component';
@@ -35,6 +39,9 @@ import {PanelModule} from 'primeng/panel';
     EditSemesterMasterComponent,
     ListSemesterMasterComponent,
     ListClassRoomMasterComponent,
+    ListGroupMasterComponent,
+    AddGroupMasterComponent,
+    EditGroupMasterComponent,
     AddClassRoomMasterComponent,
     EditClassRoomMasterComponent
   ],
@@ -46,7 +53,7 @@ import {PanelModule} from 'primeng/panel';
     ButtonModule,
     PanelModule
   ],
-  providers: [AuthenticationService, UserService, SemesterMasterService,ClassRoomMasterServiceService],
+  providers: [AuthenticationService, UserService, SemesterMasterService,ClassRoomMasterServiceService,GroupMasterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

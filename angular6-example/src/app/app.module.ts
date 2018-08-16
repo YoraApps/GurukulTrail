@@ -20,8 +20,9 @@ import { ListGroupMasterComponent } from './list-group-master/list-group-master.
 import { AddGroupMasterComponent } from './add-group-master/add-group-master.component';
 import { EditGroupMasterComponent } from './edit-group-master/edit-group-master.component';
 import {GroupMasterService} from "./service/group-master.service";
-
-
+import {ClassRoomMasterServiceService} from './service/class-room-master-service.service';
+import { AddClassRoomMasterComponent } from './add-class-room-master/add-class-room-master.component';
+import { EditClassRoomMasterComponent } from './edit-class-room-master/edit-class-room-master.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,9 @@ import {GroupMasterService} from "./service/group-master.service";
     ListClassRoomMasterComponent,
     ListGroupMasterComponent,
     AddGroupMasterComponent,
-    EditGroupMasterComponent
+    EditGroupMasterComponent,
+    AddClassRoomMasterComponent,
+    EditClassRoomMasterComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +46,7 @@ import {GroupMasterService} from "./service/group-master.service";
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [AuthenticationService, UserService, SemesterMasterService,GroupMasterService],
+  providers: [AuthenticationService, UserService, SemesterMasterService,ClassRoomMasterServiceService,GroupMasterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

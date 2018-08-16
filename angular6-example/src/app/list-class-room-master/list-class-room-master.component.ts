@@ -20,4 +20,23 @@ export class ListClassRoomMasterComponent implements OnInit {
     })
   };
 
+
+  addClassRoomMaster(): void {
+    this.router.navigate(['add-ClassMaster']);
+  };
+
+
+  deleteClassMaster(classRoomMasters: classRoomMaster): void{
+    this.classRoomMasterServiceService.deleteClassMaster(classRoomMasters.Class_Id)
+    .subscribe( data => {
+      this.classRoomMasters=this.classRoomMasters.filter(s=>s !== classRoomMasters );
+    })
+  };
+
+  editClassMaster(classRoomMasters: classRoomMaster):void{
+    localStorage.removeItem("editClass_Id");
+    localStorage.setItem("editClass_Id", classRoomMasters.Class_Id.toString());
+    this.router.navigate(['edit-classRoomMaster']);
+  };
+
 }

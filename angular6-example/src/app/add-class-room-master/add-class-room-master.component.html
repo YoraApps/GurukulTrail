@@ -1,0 +1,26 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add ClassRoom</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="UniversityId">UniversityId:</label>
+      <input type="UniversityId" formControlName="UniversityId" placeholder="UniversityId" name="UniversityId" class="form-control" id="UniversityId">
+    </div>
+
+    <div class="form-group">
+      <label for="Class_Name">Class_Name:</label>
+      <input formControlName="Class_Name" placeholder="Class_Name" name="Class_Name" class="form-control" id="Class_Name">
+    </div>
+
+    <div class="form-group">
+      <label for="Created_Ip">Created_Ip:</label>
+      <input formControlName="Created_Ip" placeholder="Created_Ip" name="Created_Ip" class="form-control" id="Created_Ip">
+    </div>
+
+    <button class="btn btn-success">SAVE</button>
+  </form>
+</div>
+
+
+
+
+

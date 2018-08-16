@@ -6,9 +6,9 @@ import { HttpClient } from '@angular/common/http';
 export class ClassRoomMasterServiceService {
 
   constructor(private http: HttpClient) {  }
-   baseUrl:string='http://localhost:1487api/classRoomMaster';
+   baseUrl: string='http://localhost:1487/api/classRoomMaster';
    getClassMaster() {
-    return this.http.get<classRoomMaster[]>(this.baseUrl+"/getclassmaster");
+    return this.http.get<classRoomMaster[]>(this.baseUrl+ "/getclassmaster");
   }
 
   getClassMasterById(classId) {
@@ -16,6 +16,7 @@ export class ClassRoomMasterServiceService {
   }
 
   createClassMaster(classmaster: classRoomMaster) {
+    debugger
     return this.http.post(this.baseUrl+"/update", classmaster);
   }
 

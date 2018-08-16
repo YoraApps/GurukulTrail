@@ -62,7 +62,7 @@ namespace HomeCinema.Services.Repository
       param.Add("@Class_Name", classRoomMasterDs.Class_Name);
       param.Add("@Active", 1);
       param.Add("@Created_By", classRoomMasterDs.Created_By);
-      param.Add("@Created_On", classRoomMasterDs.Created_On);    
+      param.Add("@Created_On",DateTime.UtcNow);    
       param.Add("@Created_Ip", classRoomMasterDs.Created_Ip);
       _db.Open();      
       var val = _db.Execute("Ysp_UpdateClassMaster", param, commandType: CommandType.StoredProcedure);

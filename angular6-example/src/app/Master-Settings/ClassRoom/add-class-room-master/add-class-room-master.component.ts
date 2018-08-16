@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
-import {ClassRoomMasterServiceService} from "../service/class-room-master-service.service";
+import {ClassRoomMasterServiceService} from "../../../service/class-room-master-service.service";
 @Component({
   selector: 'app-add-class-room-master',
   templateUrl: './add-class-room-master.component.html',

@@ -1,0 +1,17 @@
+<div class="col-md-6">
+    <h2 class="text-center">Edit Class Room</h2>
+    <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for=" UniversityId"> UniversityId:</label>
+        <input formControlName=" Class_Id" type="text" name=" Class_Id" id=" Class_Id" style="display: none" />
+        <input  formControlName=" UniversityId" placeholder=" UniversityId" name=" UniversityId" class="form-control" id=" UniversityId">
+      </div>
+  
+      <div class="form-group">
+        <label for="Class_Name">Class_Name:</label>
+        <input formControlName="Class_Name" placeholder="Class_Name" name="Class_Name" class="form-control" id="Class_Name">
+      </div>
+      <button class="btn btn-success">Update</button>
+    </form>
+  </div>
+

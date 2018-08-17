@@ -18,7 +18,7 @@ export class EditSemesterMasterComponent implements OnInit {
     SemesterId: new  FormControl(''),
     SemesterCode: new  FormControl(''),
     SemesterName: new  FormControl(''),
-    SKS: new  FormControl(''),
+    SKS: new  FormControl('')
   });
   constructor(private formBuilder: FormBuilder,private router: Router, private semesterMasterService: SemesterMasterService) { }
   SemesterId

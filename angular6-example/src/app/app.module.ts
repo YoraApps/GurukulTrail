@@ -27,6 +27,12 @@ import {TableModule} from 'primeng/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {ButtonModule} from 'primeng/button';
 import {PanelModule} from 'primeng/panel';
+import { ListChapterMasterComponent } from './Master-Settings/ChapterMaster/list-chapter-master/list-chapter-master.component';
+import { EditChapterMasterComponent } from './Master-Settings/ChapterMaster/edit-chapter-master/edit-chapter-master.component';
+import { AddChapterMasterComponent } from './Master-Settings/ChapterMaster/add-chapter-master/add-chapter-master.component';
+import { ChapterMasterServiceService } from './service/chapter-master-service.service';
+import { ListFacultDeptComponent } from './Master-Settings/FacultDept/list-facult-dept/list-facult-dept.component';
+import { AddFacultDeptComponent } from './Master-Settings/FacultDept/add-facult-dept/add-facult-dept.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +49,12 @@ import {PanelModule} from 'primeng/panel';
     AddGroupMasterComponent,
     EditGroupMasterComponent,
     AddClassRoomMasterComponent,
-    EditClassRoomMasterComponent
+    EditClassRoomMasterComponent,
+    ListChapterMasterComponent,
+    EditChapterMasterComponent,
+    AddChapterMasterComponent,
+    ListFacultDeptComponent,
+    AddFacultDeptComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +64,7 @@ import {PanelModule} from 'primeng/panel';
     ButtonModule,
     PanelModule
   ],
-  providers: [AuthenticationService, UserService, SemesterMasterService,ClassRoomMasterServiceService,GroupMasterService],
+  providers: [AuthenticationService, UserService, SemesterMasterService,ClassRoomMasterServiceService,GroupMasterService,ChapterMasterServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

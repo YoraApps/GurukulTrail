@@ -1,31 +1,3 @@
-<!-- <div class="col-md-6">
-  <h2> Semester Details</h2>
-  <button class="btn btn-danger" (click)="addSemester()"> Add Semester</button>
-  <table class="table table-striped">
-    <thead>
-    <tr>
-      <th class="hidden">semesterId</th>
-      <th>SemesterCode</th>
-      <th>SemesterName</th>
-      <th>SKS</th>
-      <th>UniversityId</th>
-      <th>Action</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr *ngFor="let sem of semesterMasters">
-      <td class="hidden">{{sem.SemesterId}}</td>
-      <td>{{sem.SemesterCode}}</td>
-      <td>{{sem.SemesterName}}</td>
-      <td>{{sem.SKS}}</td>
-      <td>{{sem.UniversityId}}</td>
-      <td><button class="btn btn-danger" (click)="deleteSemester(sem)"> Delete</button>
-        <button class="btn btn-danger" (click)="editSemester(sem)" style="margin-left: 20px;"> Edit</button></td>
-    </tr>
-    </tbody>
-  </table>
-</div> -->
-
 <p-table [columns]="cols" [value]="semesterMasters" selectionMode="single" [(selection)]="selectedSemester"  [paginator]="true" [rows]="15">
   <ng-template pTemplate="caption">
       Semester

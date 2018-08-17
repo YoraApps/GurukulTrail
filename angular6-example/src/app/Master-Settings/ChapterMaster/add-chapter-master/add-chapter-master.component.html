@@ -1,0 +1,28 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Chapter</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="ChapterNumber">ChapterNumber:</label>
+      <input type="ChapterNumber" formControlName="ChapterNumber" placeholder="ChapterNumber" name="ChapterNumber" class="form-control" id="ChapterNumber">
+    </div>
+
+    <div class="form-group">
+      <label for="ChapterTitle">ChapterTitle:</label>
+      <input formControlName="ChapterTitle" placeholder="ChapterTitle" name="ChapterTitle" class="form-control" id="ChapterTitle">
+    </div>
+
+    <div class="form-group">
+      <label for="ModeOfTeaching"> ModeOfTeaching:</label>
+      <input formControlName="ModeOfTeaching" placeholder="ModeOfTeaching" name="ModeOfTeaching" class="form-control" id="ModeOfTeaching">
+    </div>
+    <div class="form-group">
+      <label for="ChapterDetails">ChapterDetails:</label>
+      <input formControlName="ChapterDetails" placeholder="ChapterDetails" name="ChapterDetails" class="form-control" id="ChapterDetails">
+    </div>
+    <div class="form-group">
+      <label for="SKS">SKS:</label>
+      <input formControlName="SKS" placeholder="SKS" name="SKS" class="form-control" id="SKS">
+    </div>
+    <button class="btn btn-success">SAVE</button>
+  </form>
+</div>

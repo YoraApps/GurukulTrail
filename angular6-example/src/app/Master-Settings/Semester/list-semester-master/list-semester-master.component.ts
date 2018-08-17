@@ -25,21 +25,11 @@ export class ListSemesterMasterComponent implements OnInit {
         { field: 'SemesterId', header: 'Id' },
         { field: 'SemesterCode', header: 'Code' },
         { field: 'SemesterName', header: 'SemesterName' },
-        { field: 'SKS', header: 'SKS' },
-        //{ field: 'UniversityId', header: 'UniversityId' },
-       // {filed: 'Action',header:'Action'}
+        { field: 'SKS', header: 'SKS' }
     ];
     ApplicationCache
   }
   semesterMaster : any = {};
-
-  onRowSelect(data) {
-    debugger
-    this.semesterMaster = this.deleteSemester(data);
-
-    //this.displayDialog = true;
-}
- 
   deleteSemester(data){
     debugger
     this.semesterMasterService.deleteSemester(data.SemesterId)

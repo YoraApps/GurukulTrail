@@ -1,4 +1,4 @@
-<div class="col-md-6">
+<!-- <div class="col-md-6">
   <h2>ClassRoomMaster Details</h2>
   <button class="btn btn-danger" (click)="addClassRoomMaster()"> Add ClassRoomMaster</button>
   <table class="table table-striped">
@@ -24,7 +24,40 @@
     </tr>
     </tbody>
   </table>
-</div>
+</div> -->
+
+<p-table [columns]="cols" [value]="classRoomMasters" selectionMode="single" [(selection)]="selectedSemester"  [paginator]="true" [rows]="15">
+  <ng-template pTemplate="caption">
+      ChapterMaster
+  </ng-template>
+  <ng-template pTemplate="header" let-columns>
+      <tr>
+          <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+              {{col.header}}
+              <p-sortIcon [field]="col.field"></p-sortIcon>
+          </th>  
+          <th>
+              Action
+          </th>      
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+      <tr [pSelectableRow]="rowData">
+          <td *ngFor="let col of columns">
+              {{rowData[col.field]}}
+          </td>
+          <td>
+            <button type="button" pButton icon="fa fa-close"  (click)="deleteClassMaster(rowData)" label="Delete"></button>
+            <button type="button" pButton icon="fa fa-check"  (click)="editClassMaster(rowData)" label="Edit"></button>
+          </td>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="summary" let-rowData>
+      <div style="text-align:left">
+          <button type="button" pButton icon="fa fa-plus" (click)="addClassRoomMaster()" label="Add"></button>
+      </div>
+  </ng-template>
+</p-table>
 
 
 

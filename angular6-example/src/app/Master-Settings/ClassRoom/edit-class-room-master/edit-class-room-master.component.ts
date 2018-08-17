@@ -16,7 +16,7 @@ export class EditClassRoomMasterComponent implements OnInit {
   editForm :FormGroup= new FormGroup({
     Class_Id: new  FormControl(''),
     UniversityId: new  FormControl(''),
-    Class_Name: new  FormControl(''),
+    Class_Name: new  FormControl('')
   });
   constructor(private formBuilder: FormBuilder,private router: Router, private classRoomMasterServiceService: ClassRoomMasterServiceService) { }
   Class_Id

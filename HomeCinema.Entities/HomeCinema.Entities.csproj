@@ -40,7 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Customer.cs" />
+    <Compile Include="DataSource\ChapterMasterDs.cs" />
     <Compile Include="DataSource\ClassRoomMasterDs.cs" />
+    <Compile Include="DataSource\FacultyDeptDs.cs" />
     <Compile Include="DataSource\SemesterMasterDs.cs" />
     <Compile Include="Error.cs" />
     <Compile Include="Genre.cs" />

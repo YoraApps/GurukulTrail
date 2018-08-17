@@ -40,8 +40,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Customer.cs" />
+    <Compile Include="DataSource\BatchMaster.cs" />
     <Compile Include="DataSource\ClassRoomMasterDs.cs" />
+    <Compile Include="DataSource\GroupMasterDs.cs" />
     <Compile Include="DataSource\SemesterMasterDs.cs" />
+    <Compile Include="DataSource\SubjectMaster.cs" />
+    <Compile Include="DataSource\TaskDs.cs" />
     <Compile Include="Error.cs" />
     <Compile Include="Genre.cs" />
     <Compile Include="IEntityBase.cs" />

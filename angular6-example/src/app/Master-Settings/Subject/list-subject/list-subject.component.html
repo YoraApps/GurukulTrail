@@ -1,0 +1,81 @@
+<!--<div class="col-md-6">
+  <h2> Subject Details</h2>
+  <button class="btn btn-danger" (click)="addSubject()"> Add Subject</button>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+    
+      <th>SubjectCode</th>
+      <th>SubjectName </th>
+       <th>SKS </th>-->
+       <!--<th>University Id</th>
+     <th> TheoriticalSKS </th>
+      <th>PracticalSKS</th>
+      <th>CourseType </th>
+     <th> Semester </th>
+      <th>PreRequisteCourse</th>
+       <th>Teacher1 </th>
+     <th> Teacher2 </th>
+      <th>Teacher3</th>
+      <th> TotalPeriods </th>-->
+      <!--<th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let subject of subjects">
+     
+      <td>{{subject.SubjectCode}}</td>
+      <td>{{subject.SubjectName}}</td>
+      <td>{{subject.SKS}}</td>-->
+      <!--<td>{{subject.UniversityId}}</td>     
+      <td>{{subject.TheoriticalSKS}}</td>
+      <td>{{subject.PracticalSKS}}</td>
+      <td>{{subject.CourseType}}</td>
+      <td>{{subject.Semester}}</td>
+      <td>{{subject.PreRequisteCourse}}</td>      
+      <td>{{subject.Teacher1}}</td>
+      <td>{{subject.Teacher2}}</td>
+      <td>{{subject.Teacher3}}</td>      
+      <td>{{subject.TotalPeriods}}</td>-->
+     
+      <!--<td><button class="btn btn-danger" (click)="deleteSubject(subject)"> Delete</button>
+        <button class="btn btn-danger" (click)="editSubject(subject)" style="margin-left: 20px;"> Edit</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>-->
+
+
+
+<p-table [columns]="cols" [value]="subjects" selectionMode="single" [(selection)]="Subject"  [paginator]="true" [rows]="15">
+  <ng-template pTemplate="caption">
+      Subject
+  </ng-template>
+  <ng-template pTemplate="header" let-columns>
+      <tr>
+          <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+              {{col.header}}
+              <p-sortIcon [field]="col.field"></p-sortIcon>
+          </th>  
+          <th>
+              Action
+          </th>      
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+      <tr [pSelectableRow]="rowData">
+          <td *ngFor="let col of columns">
+              {{rowData[col.field]}}
+          </td>
+          <td>
+            <button type="button" pButton icon="fa fa-close"  (click)="deleteSubject(rowData)" label="Delete"></button>
+            <button type="button" pButton icon="fa fa-check"  (click)="editSubject(rowData)" label="Edit"></button>
+          </td>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="summary" let-rowData>
+      <div style="text-align:left">
+          <button type="button" pButton icon="fa fa-plus" (click)="addSubject()" label="AddSubject"></button>
+      </div>
+  </ng-template>
+</p-table>  

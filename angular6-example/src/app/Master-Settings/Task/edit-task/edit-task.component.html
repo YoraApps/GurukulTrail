@@ -1,0 +1,22 @@
+<div class="col-md-6">
+  <h2 class="text-center">Edit Task </h2>
+  <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="TaskName">Task Name:</label>
+       <input formControlName="TaskId" type="text" name="TaskId" id="TaskId" style="display: none" />
+      <input formControlName="TaskName" placeholder="Task Name" name="TaskName" class="form-control" id="TaskName">
+    </div>
+
+    <div class="form-group">
+      <label for="TaskDescription"> Task Description :</label>
+      <input formControlName="TaskDescription" placeholder=" TaskDescription" name="TaskDescription" class="form-control" id="TaskDescription">
+    </div>
+
+    <div class="form-group">
+      <label for="TaskDuration">Task Duration:</label>
+      <input formControlName="TaskDuration" placeholder="Task Duration" name="TaskDuration" class="form-control" id="TaskDuration">
+    </div>
+
+    <button class="btn btn-success">Update</button>
+  </form>
+</div>

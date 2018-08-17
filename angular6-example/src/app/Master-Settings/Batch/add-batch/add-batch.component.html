@@ -1,0 +1,32 @@
+
+<div class="col-md-6">
+  <h2 class="text-center">Add Batch Master</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="BatchName">Batch Name:</label>
+      <input type="BatchName" formControlName="BatchName" placeholder="Batch Name" name="BatchName" class="form-control" id="BatchName">
+    </div>
+
+    <div class="form-group">
+      <label for=" ResultType"> Result Type :</label>
+      <input formControlName="ResultType" placeholder=" Result Type " name="ResultType" class="form-control" id="ResultType">
+    </div>
+
+    <div class="form-group">
+      <label for="AcademicTerm">Academic Term :</label>
+      <input formControlName="AcademicTerm" placeholder="Academic Term " name="AcademicTerm" class="form-control" id="AcademicTerm">
+    </div> 
+
+    <!--<div class="form-group">
+      <label for=" UniversityId"> Result Type :</label>
+      <input formControlName="UniversityId" placeholder=" University Id " name="UniversityId" class="form-control" id="UniversityId">
+    </div>
+
+     <div class="form-group">
+      <label for="BatchType">Batch Type  :</label>
+      <input formControlName="BatchType" placeholder="Batch Type" name="BatchType" class="form-control" id="BatchType">
+    </div>-->
+
+    <button class="btn btn-success">Save</button>
+  </form>
+</div>

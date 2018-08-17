@@ -10,8 +10,18 @@ import { AddUserComponent } from './add-user/add-user.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import {ListUserComponent} from "./list-user/list-user.component";
 import {UserService} from "./service/user.service";
-import {SemesterMasterService} from "./service/semester-master.service";
+import {BatchService} from "./service/batch.service";
+import {SubjectService} from "./service/subject.service";
+import {TaskService} from "./service/task.service";
 import { AddSemesterMasterComponent } from './Master-Settings/Semester/add-semester-master/add-semester-master.component';
+import {SemesterMasterService} from "./service/semester-master.service";
+import { AddBatchComponent } from './Master-Settings/Batch/add-batch/add-batch.component';
+import { ListBatchComponent } from './Master-Settings/Batch/list-batch/list-batch.component';
+import { EditBatchComponent } from './Master-Settings/Batch/edit-batch/edit-batch.component';
+import { AddSubjectComponent } from './Master-Settings/Subject/add-subject/add-subject.component';
+import { ListSubjectComponent } from './Master-Settings/Subject/list-subject/list-subject.component';
+import { EditSubjectComponent } from './Master-Settings/Subject/edit-subject/edit-subject.component';
+
 import { EditSemesterMasterComponent } from './Master-Settings/Semester/edit-semester-master/edit-semester-master.component';
 import { ListSemesterMasterComponent } from './Master-Settings/Semester/list-semester-master/list-semester-master.component';
 import { ListClassRoomMasterComponent } from './Master-Settings/ClassRoom/list-class-room-master/list-class-room-master.component';
@@ -27,6 +37,9 @@ import {TableModule} from 'primeng/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {ButtonModule} from 'primeng/button';
 import {PanelModule} from 'primeng/panel';
+import { ListTaskComponent } from './Master-Settings/Task/list-task/list-task.component';
+import { AddTaskComponent } from './Master-Settings/Task/add-task/add-task.component';
+import { EditTaskComponent } from './Master-Settings/Task/edit-task/edit-task.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +56,16 @@ import {PanelModule} from 'primeng/panel';
     AddGroupMasterComponent,
     EditGroupMasterComponent,
     AddClassRoomMasterComponent,
-    EditClassRoomMasterComponent
+    EditClassRoomMasterComponent,
+    AddBatchComponent,
+    ListBatchComponent,
+    EditBatchComponent,
+    AddSubjectComponent,
+    ListSubjectComponent,
+    EditSubjectComponent,
+    ListTaskComponent,
+    AddTaskComponent,
+    EditTaskComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +75,7 @@ import {PanelModule} from 'primeng/panel';
     ButtonModule,
     PanelModule
   ],
-  providers: [AuthenticationService, UserService, SemesterMasterService,ClassRoomMasterServiceService,GroupMasterService],
+  providers: [AuthenticationService, UserService,TaskService, SemesterMasterService,ClassRoomMasterServiceService,GroupMasterService,BatchService,SubjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

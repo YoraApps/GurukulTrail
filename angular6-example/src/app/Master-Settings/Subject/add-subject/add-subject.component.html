@@ -1,0 +1,32 @@
+
+<div class="col-md-6">
+  <h2 class="text-center">Add Subject Master</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="SubjectCode">SubjectCode :</label>
+      <input type="SubjectCode" formControlName="SubjectCode" placeholder="SubjectCode " name="SubjectCode" class="form-control" id="SubjectCode">
+    </div>
+
+    <div class="form-group">
+      <label for="SubjectName"> SubjectName :</label>
+      <input formControlName="SubjectName" placeholder=" SubjectName " name="SubjectName" class="form-control" id="SubjectName">
+    </div>
+
+    <div class="form-group">
+      <label for="SKS">SKS :</label>
+      <input formControlName="SKS" placeholder="SKS " name="SKS" class="form-control" id="SKS">
+    </div>
+
+    <!--<div class="form-group">
+      <label for=" TheoriticalSKS"> TheoriticalSKS :</label>
+      <input formControlName="TheoriticalSKS" placeholder=" TheoriticalSKS " name="TheoriticalSKS" class="form-control" id="TheoriticalSKS">
+    </div>
+
+     <div class="form-group">
+      <label for="PracticalSKS">PracticalSKS:</label>
+      <input formControlName="PracticalSKS" placeholder="PracticalSKS" name="PracticalSKS" class="form-control" id="PracticalSKS">
+    </div>-->
+
+    <button class="btn btn-success">Save</button>
+  </form>
+</div>

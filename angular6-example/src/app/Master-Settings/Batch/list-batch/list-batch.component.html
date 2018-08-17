@@ -1,0 +1,64 @@
+<!--<div class="col-md-6">
+  <h2> Batch Details</h2>
+  <button class="btn btn-danger" (click)="addBatch()"> Add Batch</button>
+  <table class="table table-striped">
+    <thead>
+    <tr>-->
+      <!--<th class="hidden">BatchId</th>-->
+      <!--<th>BatchName</th>
+      <th>Result Type</th>
+      <th>Academic Term</th>-->
+       <!--<th>University Id</th>-->
+     <!--<th> Batch Type</th>-->
+      <!--<th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let batch of batchs">
+      <td>{{batch.BatchName}}</td>
+      <td>{{batch.ResultType}}</td>
+      <td>{{batch.AcademicTerm}}</td>-->
+      <!--<td>{{batch.UniversityId}}</td>      -->
+      <!--<td>{{batch.BatchType}}</td>-->
+<!--     
+      <td><button class="btn btn-danger" (click)="deleteBatch(batch)"> Delete</button>
+        <button class="btn btn-danger" (click)="editBatch(batch)" style="margin-left: 20px;"> Edit</button></td>
+    </tr>
+    </tbody>
+  </table>   
+</div>-->
+
+
+
+<p-table [columns]="cols" [value]="batchs" selectionMode="single" [(selection)]="Batch"  [paginator]="true" [rows]="15">
+  <ng-template pTemplate="caption">
+      Batch
+  </ng-template>
+  <ng-template pTemplate="header" let-columns>
+      <tr>
+          <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+              {{col.header}}
+              <p-sortIcon [field]="col.field"></p-sortIcon>
+          </th>  
+          <th>
+              Action
+          </th>      
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+      <tr [pSelectableRow]="rowData">
+          <td *ngFor="let col of columns">
+              {{rowData[col.field]}}
+          </td>
+          <td>
+            <button type="button" pButton icon="fa fa-close"  (click)="deleteBatch(rowData)" label="Delete"></button>
+            <button type="button" pButton icon="fa fa-check"  (click)="editBatch(rowData)" label="Edit"></button>
+          </td>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="summary" let-rowData>
+      <div style="text-align:left">
+          <button type="button" pButton icon="fa fa-plus" (click)="addBatch()" label="AddBatch"></button>
+      </div>
+  </ng-template>
+</p-table>  

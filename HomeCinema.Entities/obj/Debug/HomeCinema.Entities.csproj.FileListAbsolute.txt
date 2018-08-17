@@ -16,3 +16,9 @@ F:\School_proj\GurukulTrail\HomeCinema.Entities\obj\Debug\HomeCinema.Entities.cs
 F:\School_proj\GurukulTrail\HomeCinema.Entities\obj\Debug\HomeCinema.Entities.csproj.CoreCompileInputs.cache
 F:\School_proj\GurukulTrail\HomeCinema.Entities\obj\Debug\HomeCinema.Entities.dll
 F:\School_proj\GurukulTrail\HomeCinema.Entities\obj\Debug\HomeCinema.Entities.pdb
+F:\Gurukul\GurukulTrail\HomeCinema.Entities\bin\Debug\HomeCinema.Entities.dll
+F:\Gurukul\GurukulTrail\HomeCinema.Entities\bin\Debug\HomeCinema.Entities.pdb
+F:\Gurukul\GurukulTrail\HomeCinema.Entities\obj\Debug\HomeCinema.Entities.csprojAssemblyReference.cache
+F:\Gurukul\GurukulTrail\HomeCinema.Entities\obj\Debug\HomeCinema.Entities.csproj.CoreCompileInputs.cache
+F:\Gurukul\GurukulTrail\HomeCinema.Entities\obj\Debug\HomeCinema.Entities.dll
+F:\Gurukul\GurukulTrail\HomeCinema.Entities\obj\Debug\HomeCinema.Entities.pdb

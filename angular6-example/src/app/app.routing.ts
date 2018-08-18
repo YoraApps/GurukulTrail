@@ -21,6 +21,12 @@ import { ListGroupMasterComponent } from "src/app/list-group-master/list-group-m
 import { AddGroupMasterComponent } from "src/app/add-group-master/add-group-master.component";
 import { EditGroupMasterComponent } from "src/app/edit-group-master/edit-group-master.component";
 import { ListTaskComponent } from "./Master-Settings/Task/list-task/list-task.component";
+import { AddFeeComponent } from "src/app/Master-Settings/fee/add-fee/add-fee.component";
+import { ListFeeComponent } from "src/app/Master-Settings/fee/list-fee/list-fee.component";
+import { EditFeeComponent } from "src/app/Master-Settings/fee/edit-fee/edit-fee.component";
+import { ListCampaignItemComponent } from "src/app/Master-Settings/campaignItem/list-campaign-item/list-campaign-item.component";
+import { AddCampaignItemComponent } from "src/app/Master-Settings/campaignItem/add-campaign-item/add-campaign-item.component";
+import { EditCampaignItemComponent } from "src/app/Master-Settings/campaignItem/edit-campaign-item/edit-campaign-item.component";
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'add-user', component: AddUserComponent },
@@ -44,6 +50,12 @@ const routes: Routes = [
   {path: 'add-ClassMaster',component:AddClassRoomMasterComponent},
   {path: 'edit-classRoomMaster',component:EditClassRoomMasterComponent},
   { path: 'add-task',component:AddTaskComponent},
+  {path: 'add-fee',component:AddFeeComponent},
+  {path: 'list-fee',component:ListFeeComponent},
+  {path: 'edit-fee',component:EditFeeComponent},
+  {path: 'list-campaign-item',component:ListCampaignItemComponent},
+  {path: 'add-campaign-item',component:AddCampaignItemComponent},
+  {path: 'edit-campaign-item',component:EditCampaignItemComponent},
   {path : '', component : LoginComponent}
 ];
 

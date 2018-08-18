@@ -40,6 +40,14 @@ import {PanelModule} from 'primeng/panel';
 import { ListTaskComponent } from './Master-Settings/Task/list-task/list-task.component';
 import { AddTaskComponent } from './Master-Settings/Task/add-task/add-task.component';
 import { EditTaskComponent } from './Master-Settings/Task/edit-task/edit-task.component';
+import {FeeService} from "./service/fee.service";
+import { AddFeeComponent } from "src/app/Master-Settings/fee/add-fee/add-fee.component";
+import { ListFeeComponent } from "src/app/Master-Settings/fee/list-fee/list-fee.component";
+import { EditFeeComponent } from "src/app/Master-Settings/fee/edit-fee/edit-fee.component";
+import { ListCampaignItemComponent } from './Master-Settings/campaignItem/list-campaign-item/list-campaign-item.component';
+import { AddCampaignItemComponent } from './Master-Settings/campaignItem/add-campaign-item/add-campaign-item.component';
+import { EditCampaignItemComponent } from './Master-Settings/campaignItem/edit-campaign-item/edit-campaign-item.component';
+import { CampaignItemService } from "src/app/service/campaign-item.service";
 
 @NgModule({
   declarations: [
@@ -65,7 +73,13 @@ import { EditTaskComponent } from './Master-Settings/Task/edit-task/edit-task.co
     EditSubjectComponent,
     ListTaskComponent,
     AddTaskComponent,
-    EditTaskComponent
+    EditTaskComponent,
+    AddFeeComponent,
+    ListFeeComponent,
+    EditFeeComponent,
+    ListCampaignItemComponent,
+    AddCampaignItemComponent,
+    EditCampaignItemComponent
   ],
   imports: [
     BrowserModule,
@@ -75,7 +89,8 @@ import { EditTaskComponent } from './Master-Settings/Task/edit-task/edit-task.co
     ButtonModule,
     PanelModule
   ],
-  providers: [AuthenticationService, UserService,TaskService, SemesterMasterService,ClassRoomMasterServiceService,GroupMasterService,BatchService,SubjectService],
+  providers: [AuthenticationService, UserService,TaskService, SemesterMasterService,ClassRoomMasterServiceService,
+  GroupMasterService,BatchService,SubjectService,FeeService,CampaignItemService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

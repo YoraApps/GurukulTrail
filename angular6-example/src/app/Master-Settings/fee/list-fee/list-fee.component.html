@@ -1,0 +1,61 @@
+<!--<div class="col-md-6">
+  <h2> Fee Details</h2>
+  <button class="btn btn-danger" (click)="addfee()"> Add Fee</button>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">FeeId</th>
+      <th>FeeLabel</th>
+      <th>Amount</th>
+      <th>Description</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let fee of fees">
+      <td class="hidden">{{fee.FeeId}}</td>
+      <td>{{fee.FeeLabel}}</td>
+      <td>{{fee.Amount}}</td>
+      <td>{{fee.Description}}</td>
+      <td>
+        <button class="btn btn-danger" (click)="editFee(fee)" > Edit</button>
+        <button class="btn btn-danger" (click)="deleteFee(fee)" style="margin-left: 20px;"> Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+-->
+
+<p-table [columns]="cols" [value]="fees" selectionMode="single" [(selection)]="selectedFee"  [paginator]="true" [rows]="15">
+  <ng-template pTemplate="caption">
+      Fee
+  </ng-template>
+  <ng-template pTemplate="header" let-columns>
+      <tr>
+          <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+              {{col.header}}
+              <p-sortIcon [field]="col.field"></p-sortIcon>
+          </th>  
+          <th>
+              Action
+          </th>      
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+      <tr [pSelectableRow]="rowData">
+          <td *ngFor="let col of columns">
+              {{rowData[col.field]}}
+          </td>
+          <td>
+            <button type="button" pButton icon="fa fa-close"  (click)="deleteFee(rowData)" label="Delete"></button>
+            <button type="button" pButton icon="fa fa-check"  (click)="editFee(rowData)" label="Edit"></button>
+          </td>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="summary" let-rowData>
+      <div style="text-align:left">
+          <button type="button" pButton icon="fa fa-plus" (click)="addfee()" label="Add"></button>
+      </div>
+  </ng-template>
+</p-table>

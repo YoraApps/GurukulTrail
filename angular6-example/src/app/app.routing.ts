@@ -1,5 +1,5 @@
 import { RouterModule, Routes } from '@angular/router';
-import {LoginComponent} from "./login/login.component";
+import {LoginComponent} from "./login/login.component"; 
 import {AddUserComponent} from "./add-user/add-user.component";
 import {ListUserComponent} from "./list-user/list-user.component";
 import {EditUserComponent} from "./edit-user/edit-user.component";
@@ -21,6 +21,12 @@ import { ListGroupMasterComponent } from "src/app/list-group-master/list-group-m
 import { AddGroupMasterComponent } from "src/app/add-group-master/add-group-master.component";
 import { EditGroupMasterComponent } from "src/app/edit-group-master/edit-group-master.component";
 import { ListTaskComponent } from "./Master-Settings/Task/list-task/list-task.component";
+import { ListCampaignComponent } from './Master-Settings/Campaign/list-campaign/list-campaign.component';
+import { AddCampaignComponent } from './Master-Settings/Campaign/add-campaign/add-campaign.component';
+import { EditCampaignComponent } from './Master-Settings/Campaign/edit-campaign/edit-campaign.component';
+import { ListVehicleComponent } from './Master-Settings/Vehicle/list-vehicle/list-vehicle.component';
+import { AddVehicleComponent } from './Master-Settings/Vehicle/add-vehicle/add-vehicle.component';
+import { EditVehicleComponent } from './Master-Settings/Vehicle/edit-vehicle/edit-vehicle.component';
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'add-user', component: AddUserComponent },
@@ -43,6 +49,12 @@ const routes: Routes = [
   {path: 'list-classRoomMaster',component:ListClassRoomMasterComponent},
   {path: 'add-ClassMaster',component:AddClassRoomMasterComponent},
   {path: 'edit-classRoomMaster',component:EditClassRoomMasterComponent},
+  { path: 'list-campaign', component: ListCampaignComponent },
+   { path: 'list-vehicle', component: ListVehicleComponent },
+    { path: 'add-vehicle', component: AddVehicleComponent },
+    { path: 'edit-vehicle', component: EditVehicleComponent },
+  { path: 'edit-campaign', component: EditCampaignComponent },
+  { path: 'add-campaign',component:AddCampaignComponent},
   { path: 'add-task',component:AddTaskComponent},
   {path : '', component : LoginComponent}
 ];

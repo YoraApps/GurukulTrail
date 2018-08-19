@@ -1,0 +1,17 @@
+﻿using HomeCinema.Entities.DataSource;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HomeCinema.Services.IRepository
+{
+    public interface IVehicleMasterrepository
+    {
+        List<VehicleMasterDs> GetAllVehicleMasterDsRepository();
+        VehicleMasterDs GetSingleVehicleMasterDs(int? id);
+        bool UpdateVehicleMasterDs(VehicleMasterDs vehicleMasterDs);
+        bool RemoveVehicleMasterDs(int? id);
+    }
+}

@@ -135,8 +135,6 @@ import { EditExamComponent } from './Master-Settings/ExaminationType/edit-exam/e
     AddCampaignItemComponent,
     EditCampaignItemComponent,
     EditFacultdeptComponent,
-    ListDriverComponent,
-    AddDriverComponent,
     ListDriverMasterComponent,
     AddDriverMasterComponent,
     EditDriverMasterComponent,

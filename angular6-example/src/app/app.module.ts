@@ -40,7 +40,7 @@ import { PanelModule} from 'primeng/panel';
 import { ListTaskComponent } from './Master-Settings/Task/list-task/list-task.component';
 import { AddTaskComponent } from './Master-Settings/Task/add-task/add-task.component';
 import { EditTaskComponent } from './Master-Settings/Task/edit-task/edit-task.component';
-import {FeeService} from "./service/fee.service";
+import { FeeService} from "./service/fee.service";
 import { AddFeeComponent } from "src/app/Master-Settings/fee/add-fee/add-fee.component";
 import { ListFeeComponent } from "src/app/Master-Settings/fee/list-fee/list-fee.component";
 import { EditFeeComponent } from "src/app/Master-Settings/fee/edit-fee/edit-fee.component";

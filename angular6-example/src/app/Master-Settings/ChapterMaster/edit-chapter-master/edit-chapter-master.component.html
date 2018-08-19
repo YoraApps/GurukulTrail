@@ -1,0 +1,36 @@
+<div class="col-md-6">
+  <h2 class="text-center">Edit ChapterMaster</h2>
+  <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="ChapterNumber">ChapterNumber:</label>
+      <input formControlName="ChapterId" type="text" name="ChapterId" id="ChapterId" style="display: none" />
+      <input  formControlName="ChapterNumber" placeholder="Chapter Number" name="ChapterNumber" class="form-control" id="ChapterNumber">
+    </div>
+
+    <div class="form-group">
+      <label for="ChapterTitle">ChapterTitle:</label>
+      <input formControlName="ChapterTitle" placeholder="Chapter Title" name="ChapterTitle" class="form-control" id="ChapterTitle">
+    </div>
+
+    <div class="form-group">
+      <label for="ModeOfTeaching">SKS:</label>
+      <input formControlName="ModeOfTeaching" placeholder="ModeOfTeaching" name="ModeOfTeaching" class="form-control" id="ModeOfTeaching">
+    </div>
+    <div class="form-group">
+      <label for="ChapterDetails">ChapterDetails:</label>
+      <input formControlName="ChapterDetails" placeholder="ChapterDetails" name="ChapterDetails" class="form-control" id="ChapterDetails">
+    </div>
+    <div class="form-group">
+      <label for="SKS">SKS:</label>
+      <input formControlName="SKS" placeholder="SKS" name="SKS" class="form-control" id="SKS">
+    </div>
+    <button class="btn btn-success">Update</button>
+  </form>
+</div>
+
+
+   
+
+
+
+

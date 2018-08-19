@@ -1,0 +1,36 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="ExamGroup">ExamGroup:</label>
+      <input type="ExamGroup" formControlName="ExamGroup" placeholder="ExamGroup" name="ExamGroup" class="form-control" id="ExamGroup">
+    </div>
+
+    <div class="form-group">
+      <label for="ExamName">ExamName:</label>
+      <input formControlName="ExamName" placeholder="ExamName" name="ExamName" class="form-control" id="ExamName">
+    </div>
+
+    <div class="form-group">
+      <label for="MinMarks">MinMarks:</label>
+      <input formControlName="MinMarks" placeholder="MinMarks" name="MinMarks" class="form-control" id="MinMarks">
+    </div>
+    <div class="form-group">
+      <label for="MaxMarks">MaxMarks:</label>
+      <input formControlName="MaxMarks" placeholder="MaxMarks" name="MaxMarks" class="form-control" id="MaxMarks">
+    </div>
+    <div class="form-group">
+      <label for="FeeLabel">FeeLabel:</label>
+      <input formControlName="FeeLabel" placeholder="FeeLabel" name="FeeLabel" class="form-control" id="FeeLabel">
+    </div>
+    <div class="form-group">
+      <label for="Amount">Amount:</label>
+      <input formControlName="Amount" placeholder="Amount" name="Amount" class="form-control" id="Amount">
+    </div>
+
+    <button class="btn btn-success">SAVE</button>
+  </form>
+</div>
+
+
+

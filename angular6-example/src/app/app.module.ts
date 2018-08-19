@@ -6,9 +6,6 @@ import { routing } from "./app.routing";
 import { AuthenticationService } from "./service/auth.service";
 //import {ReactiveFormsModule} from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
-import { AddUserComponent } from './add-user/add-user.component';
-import { EditUserComponent } from './edit-user/edit-user.component';
-import { ListUserComponent} from "./list-user/list-user.component";
 import { UserService} from "./service/user.service";
 import { BatchService} from "./service/batch.service";
 import { CampaignService} from "./service/campaign.service";
@@ -26,9 +23,6 @@ import { EditSubjectComponent } from './Master-Settings/Subject/edit-subject/edi
 import { EditSemesterMasterComponent } from './Master-Settings/Semester/edit-semester-master/edit-semester-master.component';
 import { ListSemesterMasterComponent } from './Master-Settings/Semester/list-semester-master/list-semester-master.component';
 import { ListClassRoomMasterComponent } from './Master-Settings/ClassRoom/list-class-room-master/list-class-room-master.component';
-import { ListGroupMasterComponent } from './list-group-master/list-group-master.component';
-import { AddGroupMasterComponent } from './add-group-master/add-group-master.component';
-import { EditGroupMasterComponent } from './edit-group-master/edit-group-master.component';
 import { GroupMasterService} from "./service/group-master.service";
 import { ClassRoomMasterServiceService} from './service/class-room-master-service.service';
 import { AddClassRoomMasterComponent } from './Master-Settings/ClassRoom/add-class-room-master/add-class-room-master.component';
@@ -67,6 +61,12 @@ import { AddDepartmentMasterComponent } from './Master-Settings/DepartmentMaster
 import { EditDepartmentMasterComponent } from './Master-Settings/DepartmentMaster/edit-department-master/edit-department-master.component';
 import { ListDepartmentMasterComponent } from './Master-Settings/DepartmentMaster/list-department-master/list-department-master.component';
 import { DepartmentMasterService } from 'src/app/service/department-master.service';
+import { ListGroupMasterComponent } from 'src/app/Master-Settings/GroupMaster/list-group-master/list-group-master.component';
+import { AddGroupMasterComponent } from 'src/app/Master-Settings/GroupMaster/add-group-master/add-group-master.component';
+import { EditGroupMasterComponent } from 'src/app/Master-Settings/GroupMaster/edit-group-master/edit-group-master.component';
+import { ListUserComponent } from 'src/app/Master-Settings/User/list-user/list-user.component';
+import { AddUserComponent } from 'src/app/Master-Settings/User/add-user/add-user.component';
+import { EditUserComponent } from 'src/app/Master-Settings/User/edit-user/edit-user.component';
 
 @NgModule({
   declarations: [
@@ -98,7 +98,7 @@ import { DepartmentMasterService } from 'src/app/service/department-master.servi
     EditCampaignComponent,
     AddVehicleComponent,
     ListVehicleComponent,
-    EditVehicleComponent
+    EditVehicleComponent,
     AddprogramstudyComponent,
     EditprogramstudyComponent,
     ListprogramstudyComponent,

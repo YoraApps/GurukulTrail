@@ -8,6 +8,13 @@ import { AuthenticationService } from "./service/auth.service";
 import { HttpClientModule } from "@angular/common/http";
 import { AddUserComponent } from './add-user/add-user.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
+import {ListUserComponent} from "./list-user/list-user.component";
+import {UserService} from "./service/user.service";
+import {BatchService} from "./service/batch.service";
+import {CampaignService} from "./service/campaign.service";
+import {SubjectService} from "./service/subject.service";
+import {VehicleService} from "./service/vehicle.service";
+import {TaskService} from "./service/task.service";
 import { ListUserComponent } from "./list-user/list-user.component";
 import { UserService } from "./service/user.service";
 import { BatchService } from "./service/batch.service";
@@ -21,7 +28,6 @@ import { EditBatchComponent } from './Master-Settings/Batch/edit-batch/edit-batc
 import { AddSubjectComponent } from './Master-Settings/Subject/add-subject/add-subject.component';
 import { ListSubjectComponent } from './Master-Settings/Subject/list-subject/list-subject.component';
 import { EditSubjectComponent } from './Master-Settings/Subject/edit-subject/edit-subject.component';
-
 import { EditSemesterMasterComponent } from './Master-Settings/Semester/edit-semester-master/edit-semester-master.component';
 import { ListSemesterMasterComponent } from './Master-Settings/Semester/list-semester-master/list-semester-master.component';
 import { ListClassRoomMasterComponent } from './Master-Settings/ClassRoom/list-class-room-master/list-class-room-master.component';
@@ -40,6 +46,12 @@ import { PanelModule} from 'primeng/panel';
 import { ListTaskComponent } from './Master-Settings/Task/list-task/list-task.component';
 import { AddTaskComponent } from './Master-Settings/Task/add-task/add-task.component';
 import { EditTaskComponent } from './Master-Settings/Task/edit-task/edit-task.component';
+import { ListCampaignComponent } from './Master-Settings/Campaign/list-campaign/list-campaign.component';
+import { AddCampaignComponent } from './Master-Settings/Campaign/add-campaign/add-campaign.component';
+import { EditCampaignComponent } from './Master-Settings/Campaign/edit-campaign/edit-campaign.component';
+import { AddVehicleComponent } from './Master-Settings/Vehicle/add-vehicle/add-vehicle.component';
+import { ListVehicleComponent } from './Master-Settings/Vehicle/list-vehicle/list-vehicle.component';
+import { EditVehicleComponent } from './Master-Settings/Vehicle/edit-vehicle/edit-vehicle.component';
 import {FeeService} from "./service/fee.service";
 import { AddFeeComponent } from "src/app/Master-Settings/fee/add-fee/add-fee.component";
 import { ListFeeComponent } from "src/app/Master-Settings/fee/list-fee/list-fee.component";
@@ -48,7 +60,6 @@ import { ListCampaignItemComponent } from './Master-Settings/campaignItem/list-c
 import { AddCampaignItemComponent } from './Master-Settings/campaignItem/add-campaign-item/add-campaign-item.component';
 import { EditCampaignItemComponent } from './Master-Settings/campaignItem/edit-campaign-item/edit-campaign-item.component';
 import { CampaignItemService } from "src/app/service/campaign-item.service";
-
 import { AddprogramstudyComponent } from './Master-Settings/programstudy/addprogramstudy/addprogramstudy.component';
 import { EditprogramstudyComponent } from './Master-Settings/programstudy/editprogramstudy/editprogramstudy.component';
 import { ListprogramstudyComponent } from './Master-Settings/programstudy/listprogramstudy/listprogramstudy.component';
@@ -87,6 +98,12 @@ import { DepartmentMasterService } from 'src/app/service/department-master.servi
     ListTaskComponent,
     AddTaskComponent,
     EditTaskComponent,
+    ListCampaignComponent,
+    AddCampaignComponent,
+    EditCampaignComponent,
+    AddVehicleComponent,
+    ListVehicleComponent,
+    EditVehicleComponent
     AddprogramstudyComponent,
     EditprogramstudyComponent,
     ListprogramstudyComponent,
@@ -111,7 +128,7 @@ import { DepartmentMasterService } from 'src/app/service/department-master.servi
     ButtonModule,
     PanelModule
   ],
-  providers: [AuthenticationService, UserService,TaskService, SemesterMasterService,ClassRoomMasterServiceService,
+  providers: [AuthenticationService, UserService,TaskService, SemesterMasterService,ClassRoomMasterServiceService,,CampaignService,VehicleService,
   GroupMasterService,BatchService,SubjectService,FeeService,CampaignItemService],
   bootstrap: [AppComponent]
 })

@@ -123,8 +123,21 @@ import { EditUserComponent } from 'src/app/Master-Settings/User/edit-user/edit-u
     ButtonModule,
     PanelModule
   ],
-  providers: [AuthenticationService, UserService,TaskService, SemesterMasterService,ClassRoomMasterServiceService,,CampaignService,VehicleService,
-  GroupMasterService,BatchService,SubjectService,FeeService,CampaignItemService],
+  providers: [AuthenticationService, 
+              UserService,TaskService, 
+              SemesterMasterService,
+              ClassRoomMasterServiceService,
+              CampaignService,
+              VehicleService,
+              GroupMasterService,
+              BatchService,
+              SubjectService,
+              FeeService,
+              CampaignItemService,
+              FacultyDeptService,
+              ChapterMasterServiceService,
+              DriverMasterService,
+              ExaminationTypeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

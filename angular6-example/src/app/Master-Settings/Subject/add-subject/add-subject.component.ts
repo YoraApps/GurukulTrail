@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {SubjectService} from "../../../service/subject.service";
 import {first} from "rxjs/operators";
 import {Router} from "@angular/router";
+import { SubjectService } from "src/app/Master-Settings/service/subject.service";
 @Component({
   selector: 'app-add-subject',
   templateUrl: './add-subject.component.html',

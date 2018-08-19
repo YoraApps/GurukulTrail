@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
-import {SemesterMasterService} from "../../../service/semester-master.service";
-import {semesterMaster} from "../../../model/semesterMaster.model";
+import { SemesterMasterService } from "src/app/Master-Settings/service/semester-master.service";
+import { semesterMaster } from "src/app/Master-Settings/model/semesterMaster.model";
 
 @Component({
   selector: 'app-list-semester-master',

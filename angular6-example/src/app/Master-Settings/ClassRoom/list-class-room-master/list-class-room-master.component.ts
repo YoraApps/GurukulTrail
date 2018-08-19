@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
-import {ClassRoomMasterServiceService} from "../../../service/class-room-master-service.service";
-import {classRoomMaster} from '../../../model/classRoomMaster.model';
+import { ClassRoomMasterServiceService } from "src/app/Master-Settings/service/class-room-master-service.service";
+import { classRoomMaster } from "src/app/Master-Settings/model/classRoomMaster.model";
 
 
 @Component({

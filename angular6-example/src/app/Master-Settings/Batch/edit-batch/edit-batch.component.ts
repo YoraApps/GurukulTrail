@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {BatchService} from "../../../service/batch.service";
 import {Router} from "@angular/router";
-import {Batch} from "../../../model/batch.model";
 import {FormBuilder, FormGroup, Validators,FormControl} from "@angular/forms";
 import {first} from "rxjs/operators";
+import { BatchService } from "src/app/Master-Settings/service/batch.service";
+import { Batch } from "src/app/Master-Settings/model/batch.model";
 
 @Component({
   selector: 'app-edit-batch',

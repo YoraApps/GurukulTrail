@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { DepartmentMasterService } from 'src/app/service/department-master.service';
 import {first} from "rxjs/operators";
+import { DepartmentMasterService } from "src/app/Master-Settings/service/department-master.service";
 
 @Component({
   selector: 'app-add-department-master',

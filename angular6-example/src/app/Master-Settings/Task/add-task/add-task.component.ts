@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {TaskService} from "../../../service/task.service"; 
+import {FormBuilder, FormGroup, Validators} from "@angular/forms"; 
 import {first} from "rxjs/operators";
 import {Router} from "@angular/router";
+import { TaskService } from "src/app/Master-Settings/service/task.service";
 
 @Component({
   selector: 'app-add-task',

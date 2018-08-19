@@ -1,0 +1,16 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add ClubMaster Details</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="ClubName">ClubName:</label>
+      <input type="ClubName" formControlName="ClubName" placeholder="ClubName" name="ClubName" class="form-control" id="ClubName">
+    </div>
+
+    <div class="form-group">
+      <label for="ClubDescription">Club Description:</label>
+      <input formControlName="ClubDescription" placeholder="ClubDescription" name="ClubDescription" class="form-control" id="ClubDescription">
+    </div>
+
+    <button class="btn btn-success">Update</button>
+  </form>
+</div>

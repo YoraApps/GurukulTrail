@@ -12,6 +12,12 @@ import { CampaignService} from "./service/campaign.service";
 import { SubjectService} from "./service/subject.service";
 import { VehicleService} from "./service/vehicle.service";
 import { TaskService} from "./service/task.service";
+import { FacultyDeptService } from './service/faculty-dept.service';
+import { ExaminationTypeService } from './service/examination-type.service';
+import { ChapterMasterServiceService } from './service/chapter-master-service.service';
+import { DriverMasterService } from "./service/driver-master.service";
+
+
 import { AddSemesterMasterComponent } from './Master-Settings/Semester/add-semester-master/add-semester-master.component';
 import { SemesterMasterService } from "./service/semester-master.service";
 import { AddBatchComponent } from './Master-Settings/Batch/add-batch/add-batch.component';
@@ -67,6 +73,20 @@ import { EditGroupMasterComponent } from 'src/app/Master-Settings/GroupMaster/ed
 import { ListUserComponent } from 'src/app/Master-Settings/User/list-user/list-user.component';
 import { AddUserComponent } from 'src/app/Master-Settings/User/add-user/add-user.component';
 import { EditUserComponent } from 'src/app/Master-Settings/User/edit-user/edit-user.component';
+import { ListChapterMasterComponent } from './Master-Settings/ChapterMaster/list-chapter-master/list-chapter-master.component';
+import {AddChapterMasterComponent} from "./Master-Settings/ChapterMaster/add-chapter-master/add-chapter-master.component";
+import {EditChapterMasterComponent} from "./Master-Settings/ChapterMaster/edit-chapter-master/edit-chapter-master.component";
+import { ListFacultDeptComponent } from './Master-Settings/FacultDept/list-facult-dept/list-facult-dept.component';
+import { AddFacultDeptComponent } from './Master-Settings/FacultDept/add-facult-dept/add-facult-dept.component';
+import { EditFacultdeptComponent } from './Master-Settings/FacultDept/edit-facultdept/edit-facultdept.component';
+import { ListDriverMasterComponent } from './Master-Settings/driverMaster/list-driver-master/list-driver-master.component';
+import { AddDriverMasterComponent } from './Master-Settings/driverMaster/add-driver-master/add-driver-master.component';
+import { EditDriverMasterComponent } from './Master-Settings/driverMaster/edit-driver-master/edit-driver-master.component';
+import { ListExamComponent } from './Master-Settings/ExaminationType/list-exam/list-exam.component';
+import { AddExamComponent } from './Master-Settings/ExaminationType/add-exam/add-exam.component';
+import { EditExamComponent } from './Master-Settings/ExaminationType/edit-exam/edit-exam.component';
+
+
 
 @NgModule({
   declarations: [
@@ -113,7 +133,21 @@ import { EditUserComponent } from 'src/app/Master-Settings/User/edit-user/edit-u
     EditFeeComponent,
     ListCampaignItemComponent,
     AddCampaignItemComponent,
-    EditCampaignItemComponent
+    EditCampaignItemComponent,
+    EditFacultdeptComponent,
+    ListDriverComponent,
+    AddDriverComponent,
+    ListDriverMasterComponent,
+    AddDriverMasterComponent,
+    EditDriverMasterComponent,
+    ListExamComponent,
+    AddExamComponent,
+    EditExamComponent
+    ListChapterMasterComponent,
+    EditChapterMasterComponent,
+    AddChapterMasterComponent,
+    ListFacultDeptComponent,
+    AddFacultDeptComponent,
   ],
   imports: [
     BrowserModule,

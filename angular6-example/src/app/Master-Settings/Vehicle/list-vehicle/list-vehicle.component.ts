@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
-import {VehicleService} from "../../../service/vehicle.service";
-import {Vehicle} from "../../../model/vehicle.model";
+import {VehicleService} from "../../service/vehicle.service";
+import {Vehicle} from "../../model/vehicle.model";
 
 @Component({
   selector: 'app-list-vehicle',

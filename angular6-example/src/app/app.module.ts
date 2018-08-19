@@ -142,7 +142,7 @@ import { EditExamComponent } from './Master-Settings/ExaminationType/edit-exam/e
     EditDriverMasterComponent,
     ListExamComponent,
     AddExamComponent,
-    EditExamComponent
+    EditExamComponent,
     ListChapterMasterComponent,
     EditChapterMasterComponent,
     AddChapterMasterComponent,

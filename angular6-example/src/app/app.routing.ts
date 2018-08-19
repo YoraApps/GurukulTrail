@@ -42,6 +42,18 @@ import { EditUserComponent } from 'src/app/Master-Settings/User/edit-user/edit-u
 import { ListGroupMasterComponent } from 'src/app/Master-Settings/GroupMaster/list-group-master/list-group-master.component';
 import { AddGroupMasterComponent } from 'src/app/Master-Settings/GroupMaster/add-group-master/add-group-master.component';
 import { EditGroupMasterComponent } from 'src/app/Master-Settings/GroupMaster/edit-group-master/edit-group-master.component';
+import { ListChapterMasterComponent } from './Master-Settings/ChapterMaster/list-chapter-master/list-chapter-master.component';
+import { AddChapterMasterComponent} from "./Master-Settings/ChapterMaster/add-chapter-master/add-chapter-master.component";
+import { EditChapterMasterComponent} from "./Master-Settings/ChapterMaster/edit-chapter-master/edit-chapter-master.component";
+import { ListFacultDeptComponent } from './Master-Settings/FacultDept/list-facult-dept/list-facult-dept.component';
+import { AddFacultDeptComponent } from './Master-Settings/FacultDept/add-facult-dept/add-facult-dept.component';
+import { EditFacultdeptComponent } from './Master-Settings/FacultDept/edit-facultdept/edit-facultdept.component';
+import { ListDriverMasterComponent } from './Master-Settings/driverMaster/list-driver-master/list-driver-master.component';
+import { AddDriverMasterComponent } from './Master-Settings/driverMaster/add-driver-master/add-driver-master.component';
+import { EditDriverMasterComponent } from './Master-Settings/driverMaster/edit-driver-master/edit-driver-master.component';
+import { ListExamComponent } from './Master-Settings/ExaminationType/list-exam/list-exam.component';
+import { AddExamComponent } from './Master-Settings/ExaminationType/add-exam/add-exam.component';
+import { EditExamComponent } from './Master-Settings/ExaminationType/edit-exam/edit-exam.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -60,8 +72,8 @@ const routes: Routes = [
   { path: 'edit-semestermaster',component:EditSemesterMasterComponent},
   { path: 'add-semesterMaster',component:AddSemesterMasterComponent},
   { path: 'list-group-master',component:ListGroupMasterComponent},
-  { path:'add-group-master',component:AddGroupMasterComponent},
-  { path:'edit-group-master',component:EditGroupMasterComponent},
+  { path: 'add-group-master',component:AddGroupMasterComponent},
+  { path: 'edit-group-master',component:EditGroupMasterComponent},
   { path: 'list-classRoomMaster',component:ListClassRoomMasterComponent},
   { path: 'add-ClassMaster',component:AddClassRoomMasterComponent},
   { path: 'edit-classRoomMaster',component:EditClassRoomMasterComponent},
@@ -87,7 +99,19 @@ const routes: Routes = [
   { path: 'list-campaign-item',component:ListCampaignItemComponent},
   { path: 'add-campaign-item',component:AddCampaignItemComponent},
   { path: 'edit-campaign-item',component:EditCampaignItemComponent},
-  { path : '', component : LoginComponent}
+  { path: 'list-chapterMaster',component:ListChapterMasterComponent},
+  { path: 'add-chapterMaster',component:AddChapterMasterComponent},
+  { path: 'edit-ChapterMaster',component:EditChapterMasterComponent},
+  { path: 'list-facultdept',component:ListFacultDeptComponent},
+  { path: 'add-facultdept',component:AddFacultDeptComponent},
+  { path: 'edit-facultdept',component:EditFacultdeptComponent},
+  { path: 'list-driver',component:ListDriverMasterComponent},
+  { path: 'add-driver',component:AddDriverMasterComponent},
+  { path: 'edit-driver',component:EditDriverMasterComponent},
+  { path: 'list-exam',component:ListExamComponent},
+  { path: 'add-exam',component:AddExamComponent},
+  { path: 'edit-exam',component:EditExamComponent},
+  { path: '', component : LoginComponent}
 ];
 
 export const routing = RouterModule.forRoot(routes);

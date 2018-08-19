@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { DepartmentMaster } from 'src/app/model/DepartmentMaster.model';
 import { Router } from '@angular/router';
-import { DepartmentMasterService } from 'src/app/service/department-master.service';
+import { DepartmentMasterService } from "src/app/Master-Settings/service/department-master.service";
+import { DepartmentMaster } from "src/app/Master-Settings/model/DepartmentMaster.model";
 
 @Component({
   selector: 'app-list-department-master',

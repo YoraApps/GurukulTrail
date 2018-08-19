@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
-import { CampaignItemService } from "src/app/service/campaign-item.service";
+import { CampaignItemService } from "src/app/Master-Settings/service/campaign-item.service";
 
 @Component({
   selector: 'app-add-campaign-item',

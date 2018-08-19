@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
-import { FeeService } from "src/app/service/fee.service";
-import { Fee } from "src/app/model/fee.model";
+import { FeeService } from "src/app/Master-Settings/service/fee.service";
+import { Fee } from "src/app/Master-Settings/model/fee.model";
 
 @Component({
   selector: 'app-list-fee',

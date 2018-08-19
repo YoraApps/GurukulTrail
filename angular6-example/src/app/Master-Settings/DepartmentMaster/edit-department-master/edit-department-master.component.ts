@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { DepartmentMaster } from 'src/app/model/DepartmentMaster.model';
 import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
-import { DepartmentMasterService } from 'src/app/service/department-master.service';
 import { first } from 'rxjs/internal/operators/first';
+import { DepartmentMasterService } from "src/app/Master-Settings/service/department-master.service";
+import { DepartmentMaster } from "src/app/Master-Settings/model/DepartmentMaster.model";
 
 @Component({
   selector: 'app-edit-department-master',

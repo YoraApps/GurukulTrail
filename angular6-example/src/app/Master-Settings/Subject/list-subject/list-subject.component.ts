@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
-import {SubjectService} from "../../../service/subject.service";
-import {Subject} from "../../../model/subject.model";
+import { SubjectService } from "src/app/Master-Settings/service/subject.service";
+import { Subject } from "src/app/Master-Settings/model/subject.model";
 
 @Component({
   selector: 'app-list-subject',

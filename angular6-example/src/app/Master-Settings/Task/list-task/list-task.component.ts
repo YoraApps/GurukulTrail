@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
-import {TaskService} from "../../../service/task.service";
-import {Task} from "../../../model/task.model";
+import { TaskService } from "src/app/Master-Settings/service/task.service";
+import { Task } from "src/app/Master-Settings/model/task.model";
 @Component({
   selector: 'app-list-task',
   templateUrl: './list-task.component.html',

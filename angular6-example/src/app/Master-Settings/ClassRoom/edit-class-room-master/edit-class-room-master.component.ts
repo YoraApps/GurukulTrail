@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {classRoomMaster} from '../../../model/classRoomMaster.model';
-import {ClassRoomMasterServiceService} from "../../../service/class-room-master-service.service";
 import {first} from "rxjs/operators";
 import {FormBuilder, FormGroup, Validators, FormControl} from "@angular/forms";
 import {Router} from "@angular/router";
+import { ClassRoomMasterServiceService } from "src/app/Master-Settings/service/class-room-master-service.service";
+import { classRoomMaster } from "src/app/Master-Settings/model/classRoomMaster.model";
 
 @Component({
   selector: 'app-edit-class-room-master',

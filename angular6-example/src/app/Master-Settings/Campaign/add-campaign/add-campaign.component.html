@@ -1,0 +1,11 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Campaign Master</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="CampaignName">Campaign Name:</label>
+      <input type="CampaignName" formControlName="CampaignName" placeholder="CampaignName" name="CampaignName" class="form-control" id="CampaignName">
+    </div>  
+  
+     <button class="btn btn-success">Save</button>
+  </form>
+</div>

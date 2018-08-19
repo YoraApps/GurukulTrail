@@ -1,0 +1,32 @@
+<div class="col-md-6">
+  <h2 class="text-center">Edit Vehicle Master</h2>
+  <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="RegistrationNumber">Registration Number :</label>
+       <input formControlName="VehicleId" type="text" name="VehicleId" id="VehicleId" style="display: none" />
+      <input formControlName="RegistrationNumber" placeholder="RegistrationNumber" name="RegistrationNumber" class="form-control" id="RegistrationNumber">
+    </div>
+
+    <div class="form-group">
+      <label for="Description"> Description :</label>
+      <input formControlName="Description" placeholder=" Description" name="Description" class="form-control" id="Description">
+    </div>
+
+    <div class="form-group"> 
+      <label for="OwnerNumber">OwnerNumber:</label>
+      <input formControlName="OwnerNumber" placeholder="OwnerNumber " name="OwnerNumber" class="form-control" id="OwnerNumber">
+    </div>
+
+    <div class="form-group">
+      <label for="WeightCapacity"> WeightCapacity  :</label>
+      <input formControlName="WeightCapacity" placeholder=" WeightCapacity" name="WeightCapacity" class="form-control" id="WeightCapacity">
+    </div>
+    
+     <div class="form-group">
+      <label for="VehicleStatus"> VehicleStatus :</label>
+      <input formControlName="VehicleStatus" placeholder=" VehicleStatus" name="VehicleStatus" class="form-control" id="VehicleStatus">
+    </div>
+
+    <button class="btn btn-success">Update</button>
+  </form>
+</div>

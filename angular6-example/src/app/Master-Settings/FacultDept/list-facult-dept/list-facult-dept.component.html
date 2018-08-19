@@ -1,0 +1,32 @@
+<p-table [columns]="cols" [value]="facultDeptModel" selectionMode="single" [(selection)]="selectedSemester"  [paginator]="true" [rows]="15">
+  <ng-template pTemplate="caption">
+      FacultyDept
+  </ng-template>
+  <ng-template pTemplate="header" let-columns>
+      <tr>
+          <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+              {{col.header}}
+              <p-sortIcon [field]="col.field"></p-sortIcon>
+          </th>  
+          <th>
+              Action
+          </th>      
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+      <tr [pSelectableRow]="rowData">
+          <td *ngFor="let col of columns">
+              {{rowData[col.field]}}
+          </td>
+          <td>
+            <button type="button" pButton icon="fa fa-close"  (click)="deleteFaculty(rowData)" label="Delete"></button>
+            <button type="button" pButton icon="fa fa-check"  (click)="editFaculty(rowData)" label="Edit"></button>
+          </td>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="summary" let-rowData>
+      <div style="text-align:left">
+          <button type="button" pButton icon="fa fa-plus" (click)="addFaculty()" label="Add"></button>
+      </div>
+  </ng-template>
+</p-table>

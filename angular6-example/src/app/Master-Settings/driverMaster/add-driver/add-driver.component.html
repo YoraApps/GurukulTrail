@@ -1,0 +1,42 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add User</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="DriverName">DriverName:</label>
+      <input type="DriverName" formControlName="DriverName" placeholder="DriverName" name="DriverName" class="form-control" id="DriverName">
+    </div>
+
+    <div class="form-group">
+      <label for="DriverLicenceNo">DriverLicenceNo:</label>
+      <input formControlName="DriverLicenceNo" placeholder="DriverLicenceNo" name="DriverLicenceNo" class="form-control" id="DriverLicenceNo">
+    </div>
+
+    <div class="form-group">
+      <label for="DriverMobileNo">DriverMobileNo:</label>
+      <input formControlName="DriverMobileNo" placeholder="DriverMobileNo" name="DriverMobileNo" class="form-control" id="DriverMobileNo">
+    </div>
+    <div class="form-group">
+      <label for="AlternativeContactNo">AlternativeContactNo:</label>
+      <input formControlName="AlternativeContactNo" placeholder="AlternativeContactNo" name="AlternativeContactNo" class="form-control" id="AlternativeContactNo">
+    </div>
+    <div class="form-group">
+      <label for="ReferenceName">ReferenceName:</label>
+      <input formControlName="ReferenceName" placeholder="ReferenceName" name="ReferenceName" class="form-control" id="ReferenceName">
+    </div>
+    <div class="form-group">
+      <label for="ReferenceContactNo">ReferenceContactNo:</label>
+      <input formControlName="ReferenceContactNo" placeholder="ReferenceContactNo" name="ReferenceContactNo" class="form-control" id="ReferenceContactNo">
+    </div>
+    <div class="form-group">
+      <label for="Address">Address:</label>
+      <input formControlName="Address" placeholder="Address" name="Address" class="form-control" id="Address">
+    </div>
+    <div class="form-group">
+      <label for="Experience">Experience:</label>
+      <input formControlName="Experience" placeholder="Experience" name="Experience" class="form-control" id="Experience">
+    </div>
+    <button class="btn btn-success">SAVE</button>
+  </form>
+</div>
+
+

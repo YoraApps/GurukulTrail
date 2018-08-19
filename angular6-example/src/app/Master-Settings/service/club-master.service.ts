@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ClubMaster } from "src/app/Master-Settings/model/clubmaster.model";
+import { ClubMaster } from 'src/app/model/clubmaster.model';
 
 @Injectable({
   providedIn: 'root'

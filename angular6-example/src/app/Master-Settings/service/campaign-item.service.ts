@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { campaignItem } from "src/app/Master-Settings/model/campaignItem.model";
+import { campaignItem } from "src/app/model/campaignItem.model";
 
 @Injectable({
   providedIn: 'root'

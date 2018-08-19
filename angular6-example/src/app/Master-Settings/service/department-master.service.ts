@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { DepartmentMaster } from "src/app/Master-Settings/model/DepartmentMaster.model";
+import { DepartmentMaster } from 'src/app/model/DepartmentMaster.model';
 
 @Injectable({
   providedIn: 'root'

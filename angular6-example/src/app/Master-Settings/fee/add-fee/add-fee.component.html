@@ -1,0 +1,21 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Fee</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="FeeLabel">FeeLabel:</label>
+      <input  formControlName="FeeLabel" placeholder="FeeLabel" name="FeeLabel" class="form-control" id="FeeLabel">
+    </div>
+
+    <div class="form-group">
+      <label for="Amount">Amount:</label>
+      <input formControlName="Amount" placeholder="Amount" name="Amount" class="form-control" id="Amount">
+    </div>
+    <div class="form-group">
+      <label for="Description">Description:</label>
+      <input formControlName="Description" placeholder="Description" name="Description" class="form-control" id="Description">
+    </div>   
+    <button class="btn btn-success">SAVE</button>
+  </form>
+</div>
+
+

@@ -1,0 +1,23 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add CampaignItem</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="ItemName">ItemName:</label>
+      <input type="ItemName" formControlName="ItemName" placeholder="ItemName" name="ItemName" class="form-control" id="ItemName">
+    </div>
+
+    <div class="form-group">
+      <label for="Price">Price:</label>
+      <input formControlName="Price" placeholder="Price" name="Price" class="form-control" id="Price">
+    </div>
+
+    <div class="form-group">
+      <label for="Remarks">Remarks:</label>
+      <input formControlName="Remarks" placeholder="Remarks" name="Remarks" class="form-control" id="Remarks">
+    </div>
+
+    <button class="btn btn-success">SAVE</button>
+  </form>
+</div>
+
+

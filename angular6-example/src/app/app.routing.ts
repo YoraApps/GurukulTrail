@@ -30,6 +30,12 @@ import { ListClubMasterComponent } from './Master-Settings/ClubMaster/list-club-
 import { AddDepartmentMasterComponent } from './Master-Settings/DepartmentMaster/add-department-master/add-department-master.component';
 import { EditDepartmentMasterComponent } from './Master-Settings/DepartmentMaster/edit-department-master/edit-department-master.component';
 import { ListDepartmentMasterComponent } from './Master-Settings/DepartmentMaster/list-department-master/list-department-master.component';
+import { AddFeeComponent } from "src/app/Master-Settings/fee/add-fee/add-fee.component";
+import { ListFeeComponent } from "src/app/Master-Settings/fee/list-fee/list-fee.component";
+import { EditFeeComponent } from "src/app/Master-Settings/fee/edit-fee/edit-fee.component";
+import { ListCampaignItemComponent } from "src/app/Master-Settings/campaignItem/list-campaign-item/list-campaign-item.component";
+import { AddCampaignItemComponent } from "src/app/Master-Settings/campaignItem/add-campaign-item/add-campaign-item.component";
+import { EditCampaignItemComponent } from "src/app/Master-Settings/campaignItem/edit-campaign-item/edit-campaign-item.component";
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -63,7 +69,13 @@ const routes: Routes = [
   { path: 'list-department-master',component:ListDepartmentMasterComponent},
   { path: 'edit-department-master',component:EditDepartmentMasterComponent},
   { path: 'add-department-master',component:AddDepartmentMasterComponent},
-  { path : '', component : LoginComponent}
+  {path: 'add-fee',component:AddFeeComponent},
+  {path: 'list-fee',component:ListFeeComponent},
+  {path: 'edit-fee',component:EditFeeComponent},
+  {path: 'list-campaign-item',component:ListCampaignItemComponent},
+  {path: 'add-campaign-item',component:AddCampaignItemComponent},
+  {path: 'edit-campaign-item',component:EditCampaignItemComponent},
+  {path : '', component : LoginComponent}
 ];
 
 export const routing = RouterModule.forRoot(routes);

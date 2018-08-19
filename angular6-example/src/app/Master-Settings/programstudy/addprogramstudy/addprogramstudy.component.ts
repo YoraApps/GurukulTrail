@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {first} from "rxjs/operators";
 import {Router} from "@angular/router";
-import { ProgramstudyService } from 'src/app/service/programstudy.service';
+import { ProgramstudyService } from "src/app/Master-Settings/service/programstudy.service";
 
 @Component({
   selector: 'app-addprogramstudy',

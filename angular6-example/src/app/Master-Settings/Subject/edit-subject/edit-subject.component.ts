@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {SubjectService} from "../../../service/subject.service";
 import {Router} from "@angular/router";
-import {Subject} from "../../../model/subject.model";
 import {FormBuilder, FormGroup, Validators,FormControl} from "@angular/forms";
 import {first} from "rxjs/operators";
+import { SubjectService } from "src/app/Master-Settings/service/subject.service";
+import { Subject } from "src/app/Master-Settings/model/subject.model";
 
 @Component({
   selector: 'app-edit-subject',

@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
 import {FormBuilder, FormGroup, Validators, FormControl} from "@angular/forms";
 import {first} from "rxjs/operators";
-import { CampaignItemService } from "src/app/service/campaign-item.service";
-import { campaignItem } from "src/app/model/campaignItem.model";
+import { CampaignItemService } from "src/app/Master-Settings/service/campaign-item.service";
+import { campaignItem } from "src/app/Master-Settings/model/campaignItem.model";
 
 @Component({
   selector: 'app-edit-campaign-item',

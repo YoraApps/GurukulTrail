@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ClubMasterService } from 'src/app/service/club-master.service';
 import {first} from "rxjs/operators";
+import { ClubMasterService } from "src/app/Master-Settings/service/club-master.service";
 
 @Component({
   selector: 'app-add-club-master',

@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
 import {FormBuilder, FormGroup, Validators,FormControl} from "@angular/forms";
 import {first} from "rxjs/operators";
-import { ProgramStudyMaster } from 'src/app/model/programstudy.model';
-import { ProgramstudyService } from 'src/app/service/programstudy.service';
+import { ProgramstudyService } from "src/app/Master-Settings/service/programstudy.service";
+import { ProgramStudyMaster } from "src/app/Master-Settings/model/programstudy.model";
 
 
 @Component({

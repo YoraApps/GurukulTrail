@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Router} from "@angular/router";
-import { FeeService } from "src/app/service/fee.service";
+import { FeeService } from "src/app/Master-Settings/service/fee.service";
 
 @Component({
   selector: 'app-add-fee',

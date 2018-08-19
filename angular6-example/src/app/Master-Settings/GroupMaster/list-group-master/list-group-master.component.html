@@ -1,0 +1,62 @@
+<!--<div class="col-md-6">
+  <h2> Group Details</h2>
+  <button class="btn btn-danger" (click)="addGroup()"> Add Group</button>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">GroupMasterId</th>
+      <th>GroupCode</th>
+      <th>GroupName</th>
+      <th>UniversityId</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let group of groupmasters">
+      <td class="hidden">{{group.GroupMasterId}}</td>
+      <td>{{group.GroupCode}}</td>
+      <td>{{group.GroupName}}</td>
+      <td>{{group.UniversityId}}</td>
+      <td>
+        <button class="btn btn-danger" (click)="editGroup(group)" > Edit</button>
+        <button class="btn btn-danger" (click)="deletegroup(group)" style="margin-left: 20px;"> Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>-->
+<!--</div>-->
+
+
+<p-table [columns]="cols" [value]="groupmasters" selectionMode="single" [(selection)]="selectedgroupmasters"  [paginator]="true" [rows]="15">
+  <ng-template pTemplate="caption">
+    Group Details
+  </ng-template>
+  <ng-template pTemplate="header" let-columns>
+      <tr>
+          <th *ngFor="let col of columns" [pSortableColumn]="col.field">
+              {{col.header}}
+              <p-sortIcon [field]="col.field"></p-sortIcon>
+          </th>  
+          <th>
+              Action
+          </th>      
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-rowData let-columns="columns">
+      <tr [pSelectableRow]="rowData">
+          <td *ngFor="let col of columns">
+              {{rowData[col.field]}}
+          </td>
+          <td>
+            <button type="button" pButton icon="fa fa-close"  (click)="deletegroup(rowData)" label="Delete"></button>
+            <button type="button" pButton icon="fa fa-check"  (click)="editGroup(rowData)" label="Edit"></button>
+          </td>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="summary" let-rowData>
+      <div style="text-align:left">
+          <button type="button" pButton icon="fa fa-plus" (click)="addGroup()" label="Add"></button>
+      </div>
+  </ng-template>
+</p-table>
+

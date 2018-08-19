@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
-import {BatchService} from "../../../service/batch.service";
-import {Batch} from "../../../model/batch.model";
+import { BatchService } from "src/app/Master-Settings/service/batch.service";
+import { Batch } from "src/app/Master-Settings/model/batch.model";
 
 @Component({
   selector: 'app-list-batch',  

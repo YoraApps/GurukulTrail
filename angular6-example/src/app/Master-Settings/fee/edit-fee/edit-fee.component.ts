@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
 import {FormBuilder, FormGroup, Validators, FormControl} from "@angular/forms";
 import {first} from "rxjs/operators";
-import { FeeService } from "src/app/service/fee.service";
-import { Fee } from "src/app/model/fee.model";
+import { FeeService } from "src/app/Master-Settings/service/fee.service";
+import { Fee } from "src/app/Master-Settings/model/fee.model";
 
 @Component({
   selector: 'app-edit-fee',
@@ -22,10 +22,7 @@ fees:Fee;
   });
   constructor(private formBuilder: FormBuilder,private router: Router, private feeService:FeeService) { }
   FeeId 
-
-
   ngOnInit() {
-    debugger
      this.FeeId = localStorage.getItem("editFeeId");
     if(!this.FeeId) {
       alert("Invalid action.")

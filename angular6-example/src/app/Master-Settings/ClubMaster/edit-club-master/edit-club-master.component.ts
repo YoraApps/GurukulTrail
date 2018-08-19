@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ClubMaster } from 'src/app/model/clubmaster.model';
 import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
-import { ClubMasterService } from 'src/app/service/club-master.service';
 import { first } from 'rxjs/operators';
+import { ClubMasterService } from "src/app/Master-Settings/service/club-master.service";
+import { ClubMaster } from "src/app/Master-Settings/model/clubmaster.model";
 
 @Component({
   selector: 'app-edit-club-master',

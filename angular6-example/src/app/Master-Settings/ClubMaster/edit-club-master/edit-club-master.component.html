@@ -1,0 +1,22 @@
+<div class="col-md-6">
+  <h2 class="text-center">Edit Club Master Details</h2>
+  <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="ClubName">Club Name:</label>
+      <input formControlName="ClubId" type="text" name="ClubId" id="ClubId" style="display: none" />
+      <input  formControlName="ClubName" placeholder="Club Name" name="ClubName" class="form-control" id="ClubName">
+    </div>
+
+    <div class="form-group">
+      <label for="ClubDescription">Club Description:</label>
+      <input formControlName="ClubDescription" placeholder="Club Description" name="ClubDescription" class="form-control" id="ClubDescription">
+    </div>
+    <button class="btn btn-success">Update</button>
+  </form>
+</div>
+
+
+
+
+
+

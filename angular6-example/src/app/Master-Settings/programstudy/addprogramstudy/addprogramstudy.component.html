@@ -1,0 +1,26 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add ProgramStudy Details </h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="AcademicTerm">Academic Term:</label>
+      <input type="AcademicTerm" formControlName="AcademicTerm" placeholder="AcademicTerm" name="AcademicTerm" class="form-control" id="AcademicTerm">
+    </div>
+
+    <div class="form-group">
+      <label for="ProgramStudyCode">Program Study Code:</label>
+      <input formControlName="ProgramStudyCode" placeholder="Program Study Code" name="ProgramStudyCode" class="form-control" id="ProgramStudyCode">
+    </div>
+
+    <div class="form-group">
+      <label for="ProgramStudyName">Program Study Name:</label>
+      <input formControlName="ProgramStudyName" placeholder="Program Study Name" name="ProgramStudyName" class="form-control" id="ProgramStudyName">
+    </div>
+
+    <div class="form-group">
+      <label for="SKS">SKS:</label>
+      <input formControlName="SKS" placeholder="SKS" name="SKS" class="form-control" id="SKS">
+    </div>
+
+    <button class="btn btn-success">Update</button>
+  </form>
+</div>

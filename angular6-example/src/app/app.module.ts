@@ -74,8 +74,8 @@ import { ListUserComponent } from 'src/app/Master-Settings/User/list-user/list-u
 import { AddUserComponent } from 'src/app/Master-Settings/User/add-user/add-user.component';
 import { EditUserComponent } from 'src/app/Master-Settings/User/edit-user/edit-user.component';
 import { ListChapterMasterComponent } from './Master-Settings/ChapterMaster/list-chapter-master/list-chapter-master.component';
-import {AddChapterMasterComponent} from "./Master-Settings/ChapterMaster/add-chapter-master/add-chapter-master.component";
-import {EditChapterMasterComponent} from "./Master-Settings/ChapterMaster/edit-chapter-master/edit-chapter-master.component";
+import { AddChapterMasterComponent} from "./Master-Settings/ChapterMaster/add-chapter-master/add-chapter-master.component";
+import { EditChapterMasterComponent} from "./Master-Settings/ChapterMaster/edit-chapter-master/edit-chapter-master.component";
 import { ListFacultDeptComponent } from './Master-Settings/FacultDept/list-facult-dept/list-facult-dept.component';
 import { AddFacultDeptComponent } from './Master-Settings/FacultDept/add-facult-dept/add-facult-dept.component';
 import { EditFacultdeptComponent } from './Master-Settings/FacultDept/edit-facultdept/edit-facultdept.component';

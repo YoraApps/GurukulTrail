@@ -13,6 +13,7 @@ export class ListBatchComponent implements OnInit {
   constructor(private router: Router, private batchService: BatchService) { }
   cols: any[];
   selectedClass: Batch;
+  
   ngOnInit() {
     this.batchService.getBatchs()
       .subscribe( data => {

@@ -54,6 +54,10 @@ import { EditDriverMasterComponent } from './Master-Settings/driverMaster/edit-d
 import { ListExamComponent } from './Master-Settings/ExaminationType/list-exam/list-exam.component';
 import { AddExamComponent } from './Master-Settings/ExaminationType/add-exam/add-exam.component';
 import { EditExamComponent } from './Master-Settings/ExaminationType/edit-exam/edit-exam.component';
+import { ListDegreeMasterComponent } from './Master-Settings/DegreeMaster/list-degree-master/list-degree-master.component';
+import { AddDegreeMasterComponent } from './Master-Settings/DegreeMaster/add-degree-master/add-degree-master.component';
+import { EditDegreeMasterComponent } from './Master-Settings/DegreeMaster/edit-degree-master/edit-degree-master.component';
+
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -111,6 +115,10 @@ const routes: Routes = [
   { path: 'list-exam',component:ListExamComponent},
   { path: 'add-exam',component:AddExamComponent},
   { path: 'edit-exam',component:EditExamComponent},
+  {path:'list-degreemaster',component:ListDegreeMasterComponent},
+  {path:'add-degree',component:AddDegreeMasterComponent},
+  {path:'edit-Degreemaster',component:EditDegreeMasterComponent},
+ 
   { path: '', component : LoginComponent}
 ];
 

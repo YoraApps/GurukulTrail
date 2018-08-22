@@ -86,6 +86,10 @@ import { ListExamComponent } from './Master-Settings/ExaminationType/list-exam/l
 import { AddExamComponent } from './Master-Settings/ExaminationType/add-exam/add-exam.component';
 import { EditExamComponent } from './Master-Settings/ExaminationType/edit-exam/edit-exam.component';
 
+import {DegreemasterService} from "./service/degreemaster.service";
+import { AddDegreeMasterComponent } from './Master-Settings/DegreeMaster/add-degree-master/add-degree-master.component';
+import { EditDegreeMasterComponent } from './Master-Settings/DegreeMaster/edit-degree-master/edit-degree-master.component';
+import { ListDegreeMasterComponent } from './Master-Settings/DegreeMaster/list-degree-master/list-degree-master.component';
 
 
 @NgModule({
@@ -146,6 +150,9 @@ import { EditExamComponent } from './Master-Settings/ExaminationType/edit-exam/e
     AddChapterMasterComponent,
     ListFacultDeptComponent,
     AddFacultDeptComponent,
+    AddDegreeMasterComponent,
+    EditDegreeMasterComponent,
+    ListDegreeMasterComponent,
   ],
   imports: [
     BrowserModule,
@@ -169,7 +176,8 @@ import { EditExamComponent } from './Master-Settings/ExaminationType/edit-exam/e
               FacultyDeptService,
               ChapterMasterServiceService,
               DriverMasterService,
-              ExaminationTypeService],
+              ExaminationTypeService,
+              DegreemasterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

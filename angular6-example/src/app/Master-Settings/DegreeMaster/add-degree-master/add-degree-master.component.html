@@ -1,0 +1,18 @@
+
+<div class="col-md-6">
+  <h2 class="text-center">Add Degree Master</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="DegreeCode">Degree Code:</label>
+      <input type="DegreeCode" formControlName="DegreeCode" placeholder="Degree Code" name="DegreeCode" class="form-control" id="DegreeCode">
+    </div>
+
+    <div class="form-group">
+      <label for=" DegreeName"> Degree Name :</label>
+      <input formControlName="DegreeName" placeholder=" Degree Name " name="DegreeName" class="form-control" id="DegreeName">
+    </div>
+
+    <button class="btn btn-success">Save</button>
+  </form>
+</div>
+
